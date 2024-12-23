@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Jejak Hilang</title>
+		<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="../assets/style.css" />
+	</head>
+	<body>
+		<header>
+			<div class="header__inner">
+				<img src="../assets/logo.png" alt="JejakHilang Logo" class="logo__image" />
+				<button id="hamburger" class="navbar__toggler" tabindex="0">
+					<svg xmlns="http://www.w3.org/2000/svg" width="36" class="bi" fill="currentColor" viewBox="0 0 16 16">
+						<path
+							fill-rule="evenodd"
+							d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+					</svg>
+				</button>
+
+				<nav id="drawer" class="nav">
+					<button id="closeDrawer" class="close-btn" aria-label="Close Menu">X</button>
+					<ul class="nav__list">
+						<li class="nav__item"><a href="#" id="home-link">Home</a></li>
+						<li class="nav__item"><a href="#" id="form-link">Form Pelaporan</a></li>
+						<li class="nav__item"><a href="#" id="login-link" class="auth-link">Login Admin</a></li>
+						<li class="nav__item"><button id="logout-btn" class="auth-link" style="display: none">Logout</button></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<div class="hero">
+			<div class="text">
+				<h1>Selamat Datang<br />di Jejak Hilang</h1>
+				<p>Bersama kita menemukan orang tercinta.</p>
+			</div>
+		</div>
+
+		<div id="login-modal" class="modal" style="display: none">
+			<div class="modal-content">
+				<h2>Login Admin</h2>
+				<button id="close-login">X</button>
+				<form id="login-form">
+					<input type="text" id="username" placeholder="Username" required />
+					<input type="password" id="password" placeholder="Password" required />
+					<button type="submit">Login</button>
+				</form>
+			</div>
+		</div>
+
+		<main id="main-content">
+			<section class="search-bar">
+				<input type="text" id="search-input" placeholder="Cari nama orang hilang..." />
+				<button id="search-button">Cari</button>
+			</section>
+		</main>
+
+		<footer>
+			<p>&#169; 2024 - JejakHilang. All Rights Reserved.</p>
+		</footer>
+	</body>
+</html>
